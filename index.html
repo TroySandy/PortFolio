@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=IM+Fell+English|Playfair+Display:900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container-fluid header">
+      <canvas id='canvas1'></canvas>
+          
+      <script src='./script.js'></script>
+      <svg class="editorial" viewbox="0 0 115 50" preserveaspectratio="none">
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0
+          58-18 88-18s
+          58 18 88 18
+          58-18 88-18 
+          58 18 88 18 
+          v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="-1"
+            fill="rgba(255,255,255,0.3)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="0"
+            fill="rgba(8,94,180,0.3)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="2"
+            fill="rgba(255,255,255,0.1)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="0"
+            y="2"
+            fill="rgba(8,94,180,0.4)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="4"
+            fill="rgba(8,94,180,0.2)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="0"
+            y="4"
+            fill="rgba(8,94,180,0.7)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="6"
+            fill="rgba(250, 250, 250,0.15)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="0"
+            y="8"
+            fill="rgba(250,250,250,0.1)"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="10"
+            fill="rgba(8,94,180,0.9)"
+          />
+        </g>
+      </svg>
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#aboutMe">
+          <img
+            src="./assets/C.-Troy-Sandy-black-high-res.png"
+            alt="signature"
+            width="15%"
+            height="auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Links
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://www.linkedin.com/in/troysandy/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="https://github.com/TroySandy"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./assets/resume.pdf"
+                    target="_blank"
+                    >Resume</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#forms">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="aboutMe container-fluid" id="aboutMe">
+      <div class="textContain">
+        <h1>About Me</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In quos nihil
+          officiis ab dolores minima pariatur esse, quae magnam. Perspiciatis
+          tenetur odit at enim quisquam exercitationem corrupti similique, vel
+          maiores! Cupiditate et, ea aspernatur, harum quis natus, architecto
+          cumque suscipit numquam iusto earum. Dolore laborum ipsum nesciunt
+          accusantium tempora modi, saepe laboriosam ducimus eum ipsa facilis
+          earum nulla nobis cum. Neque inventore laudantium quidem in rem quis!
+          Ipsum ducimus dolore sint consequuntur eos, pariatur cupiditate quod
+          dolorum culpa perspiciatis delectus veritatis impedit libero nulla.
+          Similique qui aspernatur deserunt consectetur quaerat! Tenetur esse
+          pariatur magni? Dolores eum architecto sapiente illum at perferendis
+          quo eligendi modi necessitatibus quisquam voluptas, unde obcaecati
+          voluptatem omnis quod, nemo expedita dicta officiis similique officia,
+          maxime veritatis! Aspernatur nisi quis, officia labore eaque
+          repudiandae ullam delectus at nihil, harum voluptates saepe. Eligendi
+          perspiciatis quo omnis delectus amet libero? Unde in natus quod dicta
+          architecto a, tempore odit!
+        </p>
+      </div>
+      <div>
+        <div class="container-sm badges">
+          <p>Proficient At</p>
+          <div class="row">
+            <div class="col-2">
+              <img src="./assets/badges-webdev_gold.png" alt="goldbadge" />
+            </div>
+            <div class="col-2">
+              <img src="./assets/codepen-sm.png" alt="codepen" />
+            </div>
+            <div class="col-2">
+              <img src="./assets/bootstrap-5-1.svg" alt="bootstraps" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <img src="./assets/html5.svg" alt="html" />
+            </div>
+            <div class="col-2">
+              <img src="./assets/css3.svg" alt="css" />
+            </div>
+            <div class="col-2">
+              <img src="./assets/logo-javascript.svg" alt="javascript" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <img src="./assets/firebase-2.png" alt="firebase" />
+            </div>
+            <div class="col-2">
+              <img src="./assets/github-icon.svg" alt="github" />
+            </div>
+            <div class="col-2">
+              <img src="./assets/visual-studio-code-1.svg" alt="vsc" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-2">
+              <img src="./assets/lightroom-cc.svg" alt="lightroom" />
+            </div>
+            <div class="col-2">
+              <img src="./assets/photoshop-cc.svg" alt="photoshop" />
+            </div>
+            <div class="col-2">
+              <img src="./assets/xd.png" alt="xd" />
+            </div>
+          </div>
+        </div>
+        <div class="container-sm badges">
+          <p>Working Towards</p>
+          <div class="row">
+            <div class="col-2">
+              <img src="./assets/badges-blue.png" alt="bluebadge" />
+            </div>
+            <div class="col-2">
+              <img src="./assets/badges-webdev_red.png" alt="redBadge" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/Sandy Photos-6 copy.jpeg"
+        alt="turtle"
+        class="turtle"
+      />
+    </div>
+
+    <section class="projects" id="projects">
+      <h1>Previous Projects</h1>
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 15em">
+              <img
+                src="./assets/codepenCreature.png"
+                class="card-img-top"
+                alt="website image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">CSS Creature</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://codepen.io/Tsandy/pen/bGBmKgj"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >Codepen.io</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 15em">
+              <img
+                src="./assets/staticLayout.png"
+                class="card-img-top"
+                alt="website image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Static Layout</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://troysandy.github.io/staticLayout/"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >My Kastapp.co</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 15em">
+              <img
+                src="./assets/apiProject1.png"
+                class="card-img-top"
+                alt="website image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">API Project #1</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://troysandy.github.io/APIProject/"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >F1 Search Engine</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 15em">
+              <img
+                src="./assets/apiProject2.png"
+                class="card-img-top"
+                alt="website image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">API Project #2</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a
+                  href="https://giphyapiproject-a2b07.web.app/"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >GIF's Galore</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 15em">
+              <img
+                src="./assets/badges-blue.png"
+                class="card-img-top"
+                alt="website image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blue Badge Project</h5>
+                <p class="card-text">
+                  What will go here?? Only time will tell...
+                </p>
+                <a
+                  href="https://elevenfifty.org/courses/full-time-immersive/web-development/"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >TBD</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 15em">
+              <img
+                src="./assets/badges-webdev_red.png"
+                class="card-img-top"
+                alt="website image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Red Badge Project</h5>
+                <p class="card-text">
+                  What will go here?? Only time will tell...
+                </p>
+                <a
+                  href="https://elevenfifty.org/courses/full-time-immersive/web-development/"
+                  target="_blank"
+                  class="btn btn-outline-secondary"
+                  >TBD</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h1>Contact Me</h1>
+
+      <form
+        class="col-4"
+        action="https://formspree.io/f/xgerwpyv"
+        method="POST"
+      >
+        <div class="mb-4">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Your Name</label
+          >
+          <input
+            type="name"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="John Doe"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="jDoe@example.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Your Message</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <button class="formSubmit" type="submit">SEND</button>
+      </form>
+
+      <div class="myLinks">
+        <a href="https://www.linkedin.com/in/troysandy/" target="_blank"
+          ><img src="./assets/linkedin.svg" class="logoImg" alt="linkedin"
+        /></a>
+        <a href="https://github.com/TroySandy" target="_blank"
+          ><img src="./assets/github-icon.svg" class="logoImg" alt="github"
+        /></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
