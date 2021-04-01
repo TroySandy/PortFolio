@@ -1,7 +1,7 @@
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
-canvas.width = 2000;
-canvas.height = 850;
+canvas.width = 1500;
+canvas.height = 667;
 
 let particleArray = [];
 let adjustX = 0; //shift from start
@@ -20,18 +20,16 @@ window.addEventListener("mousemove", function (e) {
   //   console.log(mouse.x, mouse.y);
 });
 
-
-
 //draw text on canvas
 ctx.fillStyle = "green";
 ctx.font = "15px Helvetica";
-ctx.fillText("Welcome", 3, 25)
+ctx.fillText("Welcome", 3, 25);
 const textCoordinates = ctx.getImageData(0, 0, 100, 800);
 
 class Particle {
   constructor(x, y) {
     this.x = x * 1.2; //original spacing of particles
-    this.y = y *1.6;
+    this.y = y * 1.6;
     this.size = 1;
     this.baseX = this.x;
     this.baseY = this.y;
@@ -60,11 +58,11 @@ class Particle {
     } else {
       if (this.x !== this.baseX) {
         let dx = this.x - this.baseX;
-        this.x -= dx /25;
+        this.x -= dx / 25;
       }
       if (this.y !== this.baseY) {
         let dy = this.y - this.baseY;
-        this.y -= dy /25;
+        this.y -= dy / 25;
       }
     }
   }
@@ -120,4 +118,3 @@ function connect() {
     }
   }
 }
-
