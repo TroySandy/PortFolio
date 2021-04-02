@@ -16,7 +16,7 @@ const mouse = {
 
 window.addEventListener("mousemove", function (e) {
   mouse.x = e.x;
-  mouse.y = e.y-200;
+  mouse.y = e.y-175;
   //   console.log(mouse.x, mouse.y);
 });
 
