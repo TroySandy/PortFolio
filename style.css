@@ -9,11 +9,11 @@ nav{
 
 @keyframes bgTransition {
   from {
-    background-image: url(./assets/_MG_3689.jpg);
+    background-image: url(./assets/lionfish.jpg);
     opacity: 1;
   }
   to {
-    background-image: url(./assets/Screen\ Shot\ 2021-03-31\ at\ 11.40.05\ AM.png);
+    background-image: url(./assets/codeBG.png);
     opacity: 0.5;
   }
 }
@@ -25,7 +25,7 @@ nav{
   padding-top: 15%;
   min-width: 500px;
   max-width: 2000px;
-  background-image: url("./assets/_MG_3689.jpg");
+  background-image: url("./assets/lionfish.jpg");
   animation-name: bgTransition;
   animation-duration: 10s;
   animation-fill-mode: forwards;
@@ -116,7 +116,8 @@ canvas {
   height: fit-content;
 }
 .aboutMe .col-1 img {
-  max-width: 30px;
+  max-width: 40px;
+  max-height: 40px;
 }
 .textContain {
   display: block;
