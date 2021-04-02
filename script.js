@@ -1,6 +1,6 @@
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
-canvas.width = 1500;
+canvas.width = 1250;
 canvas.height = 667;
 
 let particleArray = [];
@@ -16,19 +16,19 @@ const mouse = {
 
 window.addEventListener("mousemove", function (e) {
   mouse.x = e.x;
-  mouse.y = e.y;
+  mouse.y = e.y-200;
   //   console.log(mouse.x, mouse.y);
 });
 
 //draw text on canvas
 ctx.fillStyle = "green";
 ctx.font = "15px Helvetica";
-ctx.fillText("Welcome", 3, 25);
-const textCoordinates = ctx.getImageData(0, 0, 100, 800);
+ctx.fillText("PLayground", 3, 25);
+const textCoordinates = ctx.getImageData(0, 0, 100, 1000);
 
 class Particle {
   constructor(x, y) {
-    this.x = x * 1.2; //original spacing of particles
+    this.x = x * 1; //original spacing of particles
     this.y = y * 1.6;
     this.size = 1;
     this.baseX = this.x;
@@ -108,7 +108,7 @@ function connect() {
       opacityValue = 1 - distance / 95;
       ctx.strokeStyle = `rgba(255,255,255,${opacityValue})`;
 
-      if (distance < 40) {
+      if (distance < 50) {
         ctx.lineWidth = 2;
         ctx.beginPath();
         ctx.moveTo(particleArray[a].x, particleArray[a].y);
